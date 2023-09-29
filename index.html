@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&family=Staatliches&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio Gustavo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="profile">
+        <img src="./guga-avatar.png" alt="Foto de Gustavo de camisa preta" />
+        <p>Gustavo Cardoso</p>
+      </div>
+
+      <div id="switch">
+        <button onclick="toggleMode()" onclick="moveButton()"></button>
+        <span></span>
+      </div>
+
+      <ul>
+        <li>
+          <a
+            href="https://wa.me/5581999252170"
+            target="_blank"
+            >Alugue um Veículo</a>
+        </li>
+        <li>
+          <a href="https://wa.me/5581992329084" target="_blank"
+            >Atendimento Imaginart</a>
+        </li>
+        <li>
+          <a href="https://wa.me/5581999907895" target="_blank"
+            >Delivery Snacks Salgados</a>
+        </li>
+        <li>
+          <a id="meuEmail" onclick="buttonEmail()">E-mail para contato</a>
+          <input type="text" id="texto" value="gustavcardoso1@gmail.com" readonly/>
+        </li>
+      </ul>
+
+      <div id="social-links">
+        <a href="https://www.instagram.com/gustavcardoso1/" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="https://wa.me/5581999252170" target="_blank">
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </a>
+        <a href="https://www.linkedin.com/in/gustavo-c-572584a5/" target="_blank">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="#" id="shareMobile">
+          <ion-icon name="send-outline"></ion-icon>
+        </a>
+      </div>
+
+      <footer>
+        Feito por <a href="https://www.instagram.com/rodrigo.onn/" target="_blank">Rodrigo C.</a>
+      </footer>
+    </div>
+
+    <!-- script dos icones usados -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
