@@ -37,10 +37,16 @@ function toggleMode() {
 let isTextOriginal = true; // Variável para controlar o estado do texto
 // function para copiar o email no desktop, mostrar o email no celular e direcionar para enviar o email
 function buttonEmail() {
+  
+  function enviarEmail() {
+    
+    // Direciona para mandar e-mail já que o usuário está no celular
+    document.getElementById('meuEmail').setAttribute('href', 'mailto:gustavcardoso1@gmail.com');
+  }
 
   // Alternar o botão do e-mail no mobile
   const meuEmail = document.getElementById('meuEmail');
-      
+  
   // Verifica se o texto atual é o texto original
   if (meuEmail.textContent === 'E-mail para contato') {
     meuEmail.textContent = 'gustavcardoso1@gmail.com';
@@ -68,12 +74,7 @@ function buttonEmail() {
     })
 
   } else {
-    function enviarEmail() {
-      
-      // Direciona para mandar e-mail já que o usuário está no celular
-      document.getElementById('meuEmail').setAttribute('href', 'mailto:gustavcardoso1@gmail.com');
-      document.getElementById('meuEmail').addEventListener('click', enviarEmail())
-    }
+    document.getElementById('meuEmail').addEventListener('click', enviarEmail())
   }
 }
     
