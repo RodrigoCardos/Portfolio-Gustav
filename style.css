@@ -192,21 +192,21 @@
     cursor: default;
     animation: var(--text-footer-color);
     transition: .5s;
-    opacity: .8;
+    opacity: .9;
     text-shadow: 0px 5px 5px var(--surface-color);
   }
   
   footer:hover{
     opacity: 1;
     font-size: 16px;
-    text-shadow: 0px 10px 10px var(--surface-color);
+    text-shadow: 0px 10px 5px var(--surface-color);
   }
   
   footer a {
     font-family: 'Staatliches', cursive;
     display: inline;
     color: var(--text-color);
-    transition: all 0.3s;
+    transition: 0.3s;
     animation: var(--text-footer-color);
   }
 
