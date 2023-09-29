@@ -74,9 +74,6 @@ function buttonEmail() {
       document.getElementById('meuEmail').setAttribute('href', 'mailto:gustavcardoso1@gmail.com');
       document.getElementById('meuEmail').addEventListener('click', enviarEmail())
     }
-      
-    // Adicionar um evento de clique ao botão para alternar o texto
-    document.getElementById('meuEmail').addEventListener('click', alternarTexto());
   }
 }
     
