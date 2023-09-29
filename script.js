@@ -72,7 +72,7 @@ function buttonEmail() {
       
       // Direciona para mandar e-mail já que o usuário está no celular
       document.getElementById('meuEmail').setAttribute('href', 'mailto:gustavcardoso1@gmail.com');
-      document.getElementById('meuEmail').addEventListener('click', enviarEmail)
+      document.getElementById('meuEmail').addEventListener('click', enviarEmail())
     }
       
     // Adicionar um evento de clique ao botão para alternar o texto
