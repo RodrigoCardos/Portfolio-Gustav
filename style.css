@@ -14,7 +14,7 @@
     --highlight-color: rgba(255, 255, 255, 0.2);
     --switch-bg-url: url(./assets/moon-stars.svg);
     --switch-transition-bg-url: url(./assets/sun.svg);
-    --text-footer-color: footerColor 5s linear infinite;
+    --text-footer-color: footerColor 6s linear infinite;
   }
   
   .light {
@@ -26,7 +26,7 @@
     --highlight-color: rgba(0, 0, 0, 0.1);
     --switch-bg-url: url(./assets/sun.svg);
     --switch-transition-bg-url: url(./assets/moon-stars.svg);
-    --text-footer-color: footerColorLight 5s linear infinite;
+    --text-footer-color: footerColorLight 6s linear infinite;
   }
   
   body {
@@ -138,6 +138,7 @@
     font-weight: 500;
     transition: background 0.2s;
     cursor: pointer;
+    text-align: center;
   }
   
   /* pseudo-selector */
@@ -192,14 +193,14 @@
     cursor: default;
     animation: var(--text-footer-color);
     transition: .5s;
-    opacity: .9;
+    opacity: .8;
     text-shadow: 0px 5px 5px var(--surface-color);
   }
   
   footer:hover{
     opacity: 1;
     font-size: 16px;
-    text-shadow: 0px 10px 5px var(--surface-color);
+    text-shadow: 0px 5px 7px var(--surface-color);
   }
   
   footer a {
@@ -247,24 +248,36 @@
 
   @keyframes footerColor {
     0% {
-      color: #095b51;
+      color: rgba(255, 255, 255);
+    }
+    25% {
+      color: rgba(255, 255, 255);
     }
     50% {
-      color: rgba(255, 255, 255, 0.9);
+      color: #095b51;
+    }
+    75% {
+      color: rgba(255, 255, 255);
     }
     100% {
-      color: #095b51;
+      color: rgba(255, 255, 255);
     }
   }
 
   @keyframes footerColorLight {
     0% {
-      color: #850c90;
+      color: rgba(0, 0, 0);
+    }
+    25% {
+      color: rgba(0, 0, 0);
     }
     50% {
-      color: rgba(0, 0, 0, 0.9);
+      color: #850c90;
+    }
+    75% {
+      color: rgba(0, 0, 0);
     }
     100% {
-      color: #850c90;
+      color: rgba(0, 0, 0);
     }
   }
